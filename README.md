@@ -4,57 +4,59 @@ Projeto de **Batalha Naval desenvolvido em TypeScript**, criado como um desafio 
 
 Diferente dos projetos anteriores, este projeto foi iniciado do zero com o objetivo de criar uma experiência mais complexa, dinâmica e interativa, evoluindo gradualmente conforme novas ideias e funcionalidades são desenvolvidas.
 
-> 🚧 **Projeto em desenvolvimento**
+---
 
 ## 🎮 O que já foi desenvolvido
 
 * Tabuleiro 10x10 representado por uma matriz
-* Tabuleiro independente para jogador e computador
-* Sistema de posicionamento de navios
-* Posicionamento manual dos navios do jogador
-* Posicionamento aleatório dos navios do computador
-* Validação das posições dos navios
-* Validação dos limites do tabuleiro
-* Prevenção de sobreposição entre navios
+* Tabuleiros independentes para jogador e computador
+* **Tabuleiro Neblina:** radar de ataques exclusivo para o jogador
+* Sistema de posicionamento manual (jogador) e aleatório (computador)
+* **Coordenadas de 1 a 10** para melhor usabilidade (UX)
+* Validação de posições, limites do tabuleiro e sobreposição
 * Sistema de orientação horizontal e vertical
-* Registro das posições ocupadas por cada navio
-* Estrutura de dados para controle do estado dos navios
+* **Sistema de combate completo com turnos alternados**
+* Registro visual de acertos (`X`) e tiros na água (`O`)
+* **I.A. Caçadora (*Hunt & Target*):** computador ataca casas vizinhas ao acertar um navio
+* **Controle de danos e notificação individual de navio afundado**
+* Verificação automática de condição de vitória e derrota
+* Alinhamento visual dos tabuleiros e títulos centralizados (UI)
+
+---
 
 ## ⚓ Estrutura dos navios
 
 Cada navio possui informações próprias, como:
-
 * Nome
 * Tamanho
 * Posições ocupadas
 * Estado de afundamento
 
 Atualmente, o jogo conta com:
-
 * **Porta-Aviões** — 5 posições
 * **Encouraçado** — 4 posições
 
+---
+
 ## 🚀 Próximos objetivos
 
-A ideia é transformar gradualmente o projeto em uma experiência mais completa e interativa, adicionando:
+A ideia é continuar evoluindo o projeto adicionando:
+* Inteligência da IA para manter a linha/coluna ao acertar dois tiros seguidos
+* Expansão da frota (Submarinos e Contratorpedeiros)
+* Menu inicial com seleção de dificuldade da IA
+* Histórico de jogadas e estatísticas da partida
 
-* Sistema de ataques entre jogador e computador
-* Registro de acertos e erros
-* Sistema de dano aos navios
-* Identificação de navios afundados
-* Condição de vitória e derrota
-* Tabuleiro de ataque do jogador
-* Inteligência para as jogadas do computador
-* Melhor feedback visual durante as partidas
-* Maior dinâmica e interação durante o jogo
+*Novas funcionalidades serão incorporadas conforme o desenvolvimento avançar.*
 
-Novas funcionalidades serão incorporadas conforme o desenvolvimento avançar.
+---
 
 ## 🛠️ Tecnologias
 
 * **TypeScript**
 * **Node.js**
 * **prompt-sync**
+
+---
 
 ## 📚 Conceitos praticados
 
@@ -73,21 +75,21 @@ Novas funcionalidades serão incorporadas conforme o desenvolvimento avançar.
 * Organização de código
 * Modelagem de objetos e estados
 
+---
+
 ## 🧠 Objetivo do projeto
 
 Este projeto representa um passo além dos exercícios e desafios anteriores.
-
 A proposta é utilizar o conhecimento adquirido até aqui para **projetar e desenvolver uma aplicação mais complexa de forma independente**, tomando as próprias decisões sobre sua estrutura, regras e funcionalidades.
 
 O objetivo não é apenas finalizar o jogo, mas utilizar seu desenvolvimento como uma forma de consolidar conhecimentos em **TypeScript, lógica de programação e resolução de problemas**, adicionando novas funcionalidades conforme novos conceitos são aprendidos.
 
+---
+
 ## 📈 Status
 
-🚧 **Em desenvolvimento**
-
-A estrutura inicial do jogo e o sistema de posicionamento dos navios já estão implementados.
-
-O próximo grande passo é desenvolver o sistema de **combate, dano e interação entre jogador e computador**.
+✅ **Versão Jogável & Otimizada**  
+O sistema de combate, radar de neblina, IA de busca direcionada e formatação visual no terminal já estão totalmente implementados e funcionais.
 
 ---
 
